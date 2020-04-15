@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de liquidación</h2>
+            <form>
+
+                <div class="form-group">
+                    <label>Número de contrato</label>
+                    <input type="text" placeholder="# Contrato" name="nContrato" [(ngModel)]="liq.nContrato" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Objeto del contrato</label>
+                    <input type="text" placeholder="Objeto del contrato" name="objeto" [(ngModel)]="liq.objeto" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Valor del contrato</label>
+                    <input type="number" name="valorC" [(ngModel)]="liq.valorContrato" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>¿Apoya la emergencia del covid?</label>
+                    <input type="checkbox" name="apoyo" [(ngModel)]="liq.apoya" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Valor estampilla</label>
+                    <input type="number" name="valorE" [(ngModel)]="liq.valorEstampilla" class="form-control" disabled />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Guardar</button>
+                    <button class="btn btn-secondary" (click)="clear()" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

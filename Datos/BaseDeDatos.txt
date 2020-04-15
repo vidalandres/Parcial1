@@ -1,0 +1,12 @@
+CREATE DATABASE [liqs];
+USE [liqs]
+CREATE TABLE [dbo].[liq](
+[NContrato] [nvarchar](10) NOT NULL PRIMARY KEY,
+[Objeto] [nvarchar](50) NULL,
+[ValorContrato] [float](2) NULL,
+[Apoyo] [bit] NULL,
+[ValorEstampilla] [float] NULL,
+)
+GO
+COMMIT
+---LOL
